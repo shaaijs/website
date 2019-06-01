@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Shaai - A pluggable blogging setup">
+    <meta name="keywords" content="Blogging,Shaai,Blog,Javascript,npm,publishing,cms">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="rgb(179, 128, 128)" />
+    <title>Shaai - A pluggable blogging setup</title>
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+    <div class="container header">
+        <div class="main-card">
+            <h1 class="title">Shaai</h1>
+            <div class="sub-title">A pluggable blogging setup.</div>
+        </div>
+        <img class="main-image" src="assets/images/10.png">
+    </div>
+    <hr class="container"/>
+    <div class="container section-holder">
+        <div class="section left">
+            With Shaai, you can simply create new blogs or include them into your existing websites. It is a light-weight setup written in Javascript which is pluggable in every aspect. To begin, you can install Shaai using <code>npm</code>.
+        </div>
+        <div class="code right">
+            <code>npm install --save @shaai/core</code>
+        </div>
+    </div>
+
+    <div class="container section-holder">
+        <div class="section left">
+            To use Shaai, you need to initialise it using a <code>config</code> object. This contains properties like source of data and the related keys. For example, when using file system as the data source, you would mention the path to your files.
+        </div>
+        <div class="code right">
+            <code>
+                <pre>
+// shaai.config.js
+export default {
+    source: {
+        name: 'FS',
+        config: {
+            path: './../files'
+        }
+    }
+}</pre>
+            </code>
+        </div>
+    </div>
+    <div class="container section-holder">
+        <div class="section left">
+            You can render your data using templates called <strong>scrolls</strong>. These are essentially the renderers for your data from Shaai. We have our own default scroll called <strong>Ink.</strong> Scrolls can be developed as per required, and our developer friends can make them available for the community to use. We shall soon come up with a collection of scrolls currently available.
+            Scrolls can be installed using <code>npm</code> alongside <code>@shaai/core</code>.
+        </div>
+        <div class="code right">
+            <code>npm install --save @shaai/scroll-ink</code>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Shaai - A pluggable blogging setup">
+    <meta name="description" content="Create amazing blogs ">
     <meta name="keywords" content="Blogging,Shaai,Blog,Javascript,npm,publishing,cms">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="rgb(179, 128, 128)" />
-    <title>Shaai - A pluggable blogging setup</title>
+    <title>Shaai - A pluggable blogging framework</title>
     <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="main.css">
 </head>
@@ -13,7 +13,7 @@
     <div class="container header">
         <div class="main-card">
             <h1 class="title">Shaai</h1>
-            <div class="sub-title">A pluggable blogging setup.</div>
+            <div class="sub-title">A pluggable blogging framework.</div>
         </div>
         <img class="main-image" src="assets/images/10.png">
     </div>
@@ -33,8 +33,8 @@
         </div>
         <div class="code right">
             <code>
-                <p>import shaai from '@shaai/core'</p>
-                <p>shaai(config)</p>
+                <p>import shaai from '@shaai/core';</p>
+                <p>shaai(config);</p>
             </code>
         </div>
     </div>
@@ -44,6 +44,44 @@
         </div>
         <div class="code right">
             <code>npm install --save @shaai/scroll-ink</code>
+        </div>
+    </div>
+    <div class="container section-holder">
+        <div class="section">
+            <h1 class="section-header-1">Nomenclature</h1>
+        </div>
+    </div>
+    <div class="container section-holder">
+        <div class="section left">
+            The core library exports a set of functions to talk to your blog related data. Basic function like <code>getBlogs()</code> can be used to fetch posts and render as required.
+        </div>
+    </div>
+    <div class="container section-holder">
+        <div class="section">
+            <h1 class="section-header-1">Building blocks</h1>
+        </div>
+    </div>
+    <div class="container section-holder">
+        <div class="section left">
+            <h2 class="section-header-2">1. Core library</h2>
+            <div class="section-content ">The core library exports a set of functions to talk to your blog related data. Basic function like <code>getBlogs()</code> can be used to fetch posts and render as required.</div>
+        </div>
+        <div class="code right">
+            <code>@shaai/core</code>
+        </div>
+    </div>
+    <div class="container section-holder">
+        <div class="section left">
+            <h2 class="section-header-2">2. Scrolls</h2>
+                <div class="section-content ">Scrolls used to be the surfaces for writing down content centuries back. In Shaai, scrolls are templates that render your data. @shaai/scroll-ink is one of our homemade scrolls. It provides a blog design using Shaai's design system and is a clean way to show your blog posts.
+
+                        Scrolls are meant to be pluggable in nature. You can choose from the currently available scrolls, and we are creating more of them. Developers can also write their own scrolls using the @shaai/core package to fetch data. These can be made open source so that the community has a variety of options to choose scrolls from.</div>
+        </div>
+    </div>
+    <div class="container section-holder">
+        <div class="section left">
+            <h2 class="section-header-2">3. Cartridge</h2>
+            <div class="section-content ">The core library exports a set of functions to talk to your blog related data. Basic function like <code>getBlogs()</code> can be used to fetch posts and render as required.</div>
         </div>
     </div>
 </body>

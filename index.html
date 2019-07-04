@@ -10,78 +10,38 @@
     <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
-    <div class="container header">
-        <div class="main-card">
-            <h1 class="title">Shaai</h1>
-            <div class="sub-title">A pluggable blogging framework.</div>
-        </div>
-        <img class="main-image" src="assets/images/10.png">
-    </div>
-    <hr class="container"/>
-    <div class="container section-holder">
-        <div class="section left">
-            With Shaai, you can simply create new blogs or include them into your existing websites. It is a light-weight setup written in Javascript which is pluggable in every aspect. To begin, you can install Shaai using <code>npm</code>.
-        </div>
-        <div class="code right">
-            <code>npm install --save @shaai/core</code>
-        </div>
-    </div>
-
-    <div class="container section-holder">
-        <div class="section left">
-            To use Shaai, you need to initialise it using a <code>config</code> object. This contains properties like source of data and the related keys.
-        </div>
-        <div class="code right">
-            <code>
-                <p>import shaai from '@shaai/core';</p>
-                <p>shaai(config);</p>
-            </code>
+    <div class="cover">
+        <div class="coverOverlay"></div>
+        <div class="container header">
+            <div class="main-card">
+                <h1 class="title">Shaai</h1>
+                <div class="sub-title">A pluggable blogging framework</div>
+            </div>
+            <div class="buttons">
+                <form action="/docs.html">
+                    <input class="button" type="submit" value="Read docs" />
+                </form>
+                <form action="https://github.com/shaaijs">
+                    <input class="button" type="submit" value="Github" />
+                </form>
+                <!-- <a href="docs.html"><button class="button">
+                    Read docs
+                </button></a>
+                <button class="button">
+                    Github
+                </button> -->
+            </div>
         </div>
     </div>
-    <div class="container section-holder">
-        <div class="section left">
-            You can render your data using templates called <strong>scrolls</strong>. These are essentially the renderers for your data from Shaai.
+    
+    <div class="container description">
+        With Shaai, you can create new blogs or integrate them into your existing websites. To begin in plain JavaScript run the following.
+        <div class="code mainCode">
+            npm i --save @shaai/scroll-ink
         </div>
-        <div class="code right">
-            <code>npm install --save @shaai/scroll-ink</code>
-        </div>
-    </div>
-    <div class="container section-holder">
-        <div class="section">
-            <h1 class="section-header-1">Nomenclature</h1>
-        </div>
-    </div>
-    <div class="container section-holder">
-        <div class="section left">
-            The core library exports a set of functions to talk to your blog related data. Basic function like <code>getBlogs()</code> can be used to fetch posts and render as required.
-        </div>
-    </div>
-    <div class="container section-holder">
-        <div class="section">
-            <h1 class="section-header-1">Building blocks</h1>
-        </div>
-    </div>
-    <div class="container section-holder">
-        <div class="section left">
-            <h2 class="section-header-2">1. Core library</h2>
-            <div class="section-content ">The core library exports a set of functions to talk to your blog related data. Basic function like <code>getBlogs()</code> can be used to fetch posts and render as required.</div>
-        </div>
-        <div class="code right">
-            <code>@shaai/core</code>
-        </div>
-    </div>
-    <div class="container section-holder">
-        <div class="section left">
-            <h2 class="section-header-2">2. Scrolls</h2>
-                <div class="section-content ">Scrolls used to be the surfaces for writing down content centuries back. In Shaai, scrolls are templates that render your data. @shaai/scroll-ink is one of our homemade scrolls. It provides a blog design using Shaai's design system and is a clean way to show your blog posts.
-
-                        Scrolls are meant to be pluggable in nature. You can choose from the currently available scrolls, and we are creating more of them. Developers can also write their own scrolls using the @shaai/core package to fetch data. These can be made open source so that the community has a variety of options to choose scrolls from.</div>
-        </div>
-    </div>
-    <div class="container section-holder">
-        <div class="section left">
-            <h2 class="section-header-2">3. Cartridge</h2>
-            <div class="section-content ">The core library exports a set of functions to talk to your blog related data. Basic function like <code>getBlogs()</code> can be used to fetch posts and render as required.</div>
+        To use with React, include the @shaai/react wrapper too.
+        <div class="code mainCode">
+            npm i --save @shaai/scroll-ink @shaai/react
         </div>
     </div>
 </body>

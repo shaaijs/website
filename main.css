@@ -31,7 +31,8 @@
 
 body {
     background: rgb(224, 190, 190);
-    margin: 6%;
+    margin: 0;
+    margin-bottom: 20px;
     color: var(--primary-dark);
     font-family: 'KarlaReg', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
@@ -46,8 +47,41 @@ strong {
 }
 
 .header {
-    display: flex;
-    justify-content: space-between;
+    position: absolute;
+    bottom: 40px;
+    filter: drop-shadow(2px 4px 6px black);
+}
+
+.cover {
+    background-image: url('assets/images/cover.jpg');
+    height: 60vh;
+    background-size: cover;
+    position: relative;
+    background-blend-mode: multiply;
+    filter: saturate(0.7);
+    animation-name: fade;
+    animation-duration: 1000ms;
+}
+
+.coverOverlay {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgba(0,0,0,1), rgba(0,0,0,0.2), rgba(0,0,0,0));
+}
+
+@keyframes magic {
+    0% {filter: grayscale(0) saturate(0.8);}
+    40% {filter: grayscale(0.3) saturate(0.8);}
+    80% {filter: grayscale(1) saturate(0.8);}
+    100% {filter: grayscale(0) saturate(0.8);}
+}
+
+@keyframes fade {
+    0% {opacity: 0;}
+    50% {opacity: 0;}
+    100% {opacity: 1;}
 }
 
 .container {
@@ -58,6 +92,11 @@ strong {
 .section {
     font-size: 20px;
     line-height: 1.5em;
+}
+
+.center {
+    margin: auto;
+    text-align: center;
 }
 
 .flex {
@@ -97,11 +136,10 @@ strong {
 }
 
 .title {
-    font-family: 'GaramondReg';
-    font-size: 100px;
+    font-size: 120px;
     font-weight: 400;
     margin: 0;
-    color: var(--primary-dark)
+    color: white;
 }
 
 code, pre, .code {
@@ -123,21 +161,68 @@ p {
     background-color: rgb(240, 217, 217);
     border-radius: 5px;
     height: max-content;
+    width: fit-content;
 }
 
 .sub-title {
-    color: var(--primary-dark);
+    color: white;
     font-family: 'KarlaReg';
     letter-spacing: 2px;
     font-size: 20px;
+    margin-top: -20px;
 }
 
 .main-card {
     
 }
 
-.main-image {
-    max-height: 150px;
+.corner-image {
+    max-height: 350px;
+    margin-top: -100px;
+}
+
+.description {
+    max-width: 55%;
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 1.5em;
+    animation-name: fade;
+    animation-duration: 1000ms;
+}
+
+.buttons {
+    display: flex;
+}
+
+.mainCode {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.button {
+    background: white;
+    padding: 10px 15px;
+    border-radius: 2px;
+    text-transform: uppercase;
+    border: 0;
+    color: var(--primary-dark);
+    font-family: 'KarlaReg';
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin: 0;
+    margin-top: 20px;
+    margin-right: 8px;
+    width: 130px;
+    transition: filter 200ms ease-in-out;
+}
+
+.button:hover {
+    cursor: pointer;
+    filter: drop-shadow(2px 4px 6px black)
+}
+
+.button:focus {
+    outline: none;
 }
 
 hr {
@@ -148,23 +233,34 @@ hr {
 }
 
 @media screen and (max-width: 680px) {
-    body {
-        margin-left: 2%;
-        margin-right: 2%;
+    .header {
+        margin-top: 10px;
     }
-    .container {
-        margin-left: 2%;
-        margin-right: 2%;
+    .title {
+        font-size: 100px;
+    }
+    .sub-title {
+        letter-spacing: 0.5px;
+        margin-top: -5px;
+    }
+    .buttons {
+        margin-top: 0;
+    }
+    .corner-image {
+        max-height: 300px;
     }
     .section-holder {
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
     }
-    .code {
-        width: -webkit-fill-available;
-    }
     .left, .right {
         margin-bottom: 15px;
+    }
+    .description {
+        max-width: 100%;
+    }
+    .coverOverlay {
+        display: block;
     }
 }

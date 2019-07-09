@@ -64,11 +64,10 @@ strong {
 }
 
 .coverOverlay {
-    display: none;
     position: absolute;
     width: 100%;
     height: 100%;
-    background: linear-gradient(45deg, rgba(0,0,0,1), rgba(0,0,0,0.2), rgba(0,0,0,0));
+    background: linear-gradient(20deg, rgba(0,0,0,1), rgba(0,0,0,0.2), rgba(0,0,0,0));
 }
 
 @keyframes magic {
@@ -200,6 +199,7 @@ p {
 }
 
 .button {
+    -webkit-appearance: none;
     background: white;
     padding: 10px 15px;
     border-radius: 2px;
@@ -261,6 +261,6 @@ hr {
         max-width: 100%;
     }
     .coverOverlay {
-        display: block;
+        background: linear-gradient(45deg, rgba(0,0,0,1), rgba(0,0,0,0.2), rgba(0,0,0,0));
     }
 }

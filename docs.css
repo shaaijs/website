@@ -81,9 +81,29 @@ strong {
     to {height: 20vh;}
 }
 
+.blocks {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 5%;
+}
+
+.blocks .container {
+    flex: 0.32;
+    align-items: flex-start;
+    background: rgb(224, 190, 190);
+    filter: drop-shadow(0 2px 25px rgb(199, 170, 170));
+    margin: 0;
+    padding: 20px 30px;
+    border-radius: 4px;
+    font-size: 15px;
+    border: 2px solid rgb(207, 165, 165);
+}
+
 .container {
     margin-left: 5%;
     margin-right: 5%;
+    animation-name: fade;
+    animation-duration: 500ms;
 }
 
 .section {
@@ -120,6 +140,7 @@ strong {
     font-family: 'GaramondLight';
     color: var(--accent-1);
     margin-bottom: 0;
+    margin-top: 20px;
     font-size: 40px;
 }
 
@@ -280,5 +301,12 @@ hr {
     }
     .githubLogo {
         display: block;
+    }
+    .blocks {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .blocks .container {
+        margin-bottom: 20px;
     }
 }

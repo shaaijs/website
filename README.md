@@ -1,3 +1,4 @@
-# Shaai's official website
+![](https://i.imgur.com/84eLRd5.jpg)
+# Shaai
 
-#### [Visit](https://shaaijs.github.io)
+Visit Shaai's homepage [here](https://shaaijs.github.io).

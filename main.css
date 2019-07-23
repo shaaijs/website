@@ -85,6 +85,12 @@ strong {
     100% {opacity: 1;}
 }
 
+.logo {
+    width: 80px;
+    margin-right: 10px;
+    border: 3px solid #16161d;
+}
+
 .container {
     margin-left: 5%;
     margin-right: 5%;
@@ -154,6 +160,11 @@ p {
     margin: 5px 0;
 }
 
+.githubLogo {
+    max-width: 40px;
+    height: 1em;
+}
+
 .code {
     padding: 5px;
     padding-left: 10px;
@@ -186,7 +197,7 @@ p {
     line-height: 1.5em;
     animation-name: fade;
     animation-duration: 1000ms;
-    margin: 20px auto;
+    margin: 10px auto;
     text-align: center;
 }
 
@@ -214,7 +225,7 @@ p {
     margin: 0;
     margin-top: 20px;
     margin-right: 8px;
-    width: 130px;
+    min-width: 130px ;
     transition: filter 200ms ease-in-out;
 }
 

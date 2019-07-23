@@ -21,8 +21,8 @@
     --primary-blue: #4169E1;
     --primary-dark: #16161D;
 
-    --accent-1: rgb(180, 69, 69);
-    --accent-2: rgb(179, 128, 128);
+    --accent-1: rgb(39, 39, 39);
+    --accent-2: rgb(226, 226, 226);
 
     --transition-duration: 200ms;
     
@@ -30,7 +30,6 @@
 }
 
 body {
-    background: rgb(224, 190, 190);
     margin: 0;
     margin-bottom: 20px;
     color: var(--primary-dark);
@@ -49,7 +48,6 @@ strong {
 .header {
     position: absolute;
     bottom: 20px;
-    filter: drop-shadow(2px 4px 6px black);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -57,7 +55,6 @@ strong {
 }
 
 .cover {
-    background-image: url('assets/images/cover.jpg');
     background-size: cover;
     position: relative;
     background-blend-mode: multiply;
@@ -71,7 +68,6 @@ strong {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: linear-gradient(45deg, rgba(0,0,0,1), rgba(0,0,0,0.2), rgba(0,0,0,0));
 }
 
 @keyframes swipeUp {
@@ -90,13 +86,12 @@ strong {
 .blocks .container {
     flex: 0.32;
     align-items: flex-start;
-    background: rgb(224, 190, 190);
-    filter: drop-shadow(0 2px 25px rgb(199, 170, 170));
+    background: white;
     margin: 0;
     padding: 20px 30px;
     border-radius: 4px;
     font-size: 15px;
-    border: 2px solid rgb(207, 165, 165);
+    border: 2px solid #cccccc;
 }
 
 .container {
@@ -158,7 +153,6 @@ strong {
     font-size: 80px;
     font-weight: 400;
     margin: 0;
-    color: white;
     animation-name: fade;
     animation-duration: 1000ms;
 }
@@ -179,14 +173,13 @@ p {
     padding: 5px;
     padding-left: 10px;
     padding-right: 10px;
-    background-color: rgb(240, 217, 217);
+    background-color: #eeeeee;
     border-radius: 5px;
     height: max-content;
     width: fit-content;
 }
 
 .sub-title {
-    color: white;
     font-family: 'KarlaReg';
     animation-name: fade;
     animation-duration: 1000ms;
@@ -236,12 +229,12 @@ p {
 }
 
 .button {
-    background: white;
+    background: var(--primary-dark);
     padding: 10px 15px;
     border-radius: 2px;
     text-transform: uppercase;
     border: 0;
-    color: var(--primary-dark);
+    color: white;
     font-family: 'KarlaReg';
     font-size: 16px;
     letter-spacing: 1px;

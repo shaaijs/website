@@ -224,7 +224,7 @@ p {
     letter-spacing: 1px;
     margin: 0;
     margin-top: 20px;
-    margin-right: 8px;
+    margin-right: 12px;
     min-width: 130px ;
     transition: filter 200ms ease-in-out;
 }

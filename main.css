@@ -180,6 +180,8 @@ p {
     letter-spacing: 2px;
     font-size: 20px;
     margin-top: -20px;
+    font-weight: normal;
+    margin-bottom: 0;
 }
 
 .main-card {

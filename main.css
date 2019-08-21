@@ -257,7 +257,14 @@ hr {
 
 .blog-link {
     text-decoration: none;
+    color: cornflowerblue;
+    transition: all 200ms ease-in-out;
+    
 }
+
+.blog-link:hover {		 
+     color: #4169E1;		     
+ }
 
 @media screen and (max-width: 680px) {
     .header {

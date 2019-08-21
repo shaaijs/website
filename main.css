@@ -247,21 +247,20 @@ hr {
     margin: 20px auto;
 }
 
-.blog-button {
-    max-width: 150px;
-    margin: auto;
-    font-size: 12px;
-    padding: 3px;
-    text-align: center;
-}
-
 .blog-link {
     text-decoration: none;
+    color: cornflowerblue;
+    transition: all 200ms ease-in-out;
+}
+
+.blog-link:hover {
+    color: #4169E1
 }
 
 @media screen and (max-width: 680px) {
     .header {
         margin-top: 10px;
+        margin-bottom: 30px;
     }
     .title {
         font-size: 100px;
@@ -290,7 +289,7 @@ hr {
         text-align: left;
     }
     .cover {
-        max-height: 45vh;
+        max-height: 50vh;
         justify-content: flex-start;
         text-align: left;
     }
@@ -299,9 +298,5 @@ hr {
     }
     .mainCode {
         margin: 10px 0;
-    }
-    .blog-button {
-        margin: 0;
-        margin-top: 15px;
     }
 }

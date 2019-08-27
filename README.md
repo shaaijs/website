@@ -1,4 +1,4 @@
-![](https://i.imgur.com/84eLRd5.jpg)
-# Shaai
+![Shaai](https://i.imgur.com/IG8meVDl.png)
+# Shaai - Website
 
-Visit Shaai's homepage [here](https://shaaijs.github.io).
+Visit Shaai's homepage [here](https://shaaijs.tech).

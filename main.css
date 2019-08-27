@@ -257,6 +257,10 @@ hr {
     color: #4169E1
 }
 
+.blog-link:hover {		 
+     color: #4169E1;		     
+ }
+
 @media screen and (max-width: 680px) {
     .header {
         margin-top: 10px;

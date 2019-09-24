@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="keywords" content="Blogging,Shaai,Blog,Javascript,npm,publishing,cms">
@@ -16,48 +17,75 @@
     <title>Shaai - A pluggable blogging framework</title>
     <link rel="shortcut icon" type="image/jpg" href="https://i.imgur.com/84eLRd5s.jpg" />
     <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="main-v2.css">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145877885-1"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-    gtag('config', 'UA-145877885-1');
+        gtag('config', 'UA-145877885-1');
     </script>
 </head>
+
 <body>
-    <div class="cover">
-        <div class="container header">
-            <div class="main-card">
-                <h1 class="title"><img src="https://i.imgur.com/oYySTJT.png" class="logo" />Shaai</h1>
-                <h2 class="sub-title">A pluggable blogging framework</h2>
-            </div>
-            <div class="buttons">
-                <form action="https://shaai.herokuapp.com">
-                    <button class="button">Get Started</button>
-                </form>
-                <form action="https://github.com/shaaijs/core">
-                    <button style="display: flex;justify-content: space-around" class="button" type="submit" value="Github">
-                        Github <img onclick="window.location = 'https:\/\/github.com/shaaijs'" src="assets/images/github.png" class="githubLogo"/>
-                    </button>
-                </form>
-            </div>
-        </div>
+    <div class="navbar">
+
     </div>
-    
-    <div class="container description left">
-        With Shaai, you can create new blogs or integrate them into your existing websites.
-        <div class="">
-            <div class="code mainCode">
-                <b>Vanilla JS:</b> npm i --save @shaai/scroll-ink
+    <div class="content-wrapper">
+        <div class="content">
+            <div class="section section-header">
+                <h1>Create amazing blogs with minimal setup</h1>
+                <div>
+                    <button>Get Started</button>
+                    <button>GitHub</button>
+                </div>
             </div>
-            <div class="code mainCode">
-                <b>React:</b> npm i --save @shaai/scroll-ink @shaai/react
+            <div class="section">
+                <h2>Knowing Shaai better</h2>
+                <p>We often introduce Shaai as a pluggable blogging framework. But what does that exactly mean?</p>
+                <p>Shaai is built in such way that you could use individual entities of the framework independently, and customise them as per your needs.</p>
+
+                <!-- <div></div> -->
+                <p>Shaai is made up of three major constituents.</p>
+
+                <h3>Core library</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae ornare tempor facilisis sed ut lacus. Suspendisse placerat nulla ipsum nunc consequat blandit.</p>
+                <h3>Scrolls</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae ornare tempor facilisis sed ut lacus. Suspendisse placerat nulla ipsum nunc consequat blandit.</p>
+                <h3>Admin</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae ornare tempor facilisis sed ut lacus. Suspendisse placerat nulla ipsum nunc consequat blandit.</p>
             </div>
         </div>
-        <p><a href="/blog" class="blog-link">✐ Read our blog</a></p>
+        <div class="content">
+            <div class="section section-langs">
+                <h2>Vanilla</h2>
+                <p>npm install --save @shaai/scroll-ink</p>
+                <h2>React</h2>
+                <p>npm install --save @shaai/scroll-ink</p>
+                <h2>Browser</h2>
+                <p>npm install --save @shaai/scroll-ink</p>
+                <h2>Vue & Angular</h2>
+                <p>npm install --save @shaai/scroll-ink</p>
+            </div>
+            <div class="section">
+                <h2>Get Started</h2>
+                <p>Begin with choosing your CMS. You can use our CMS for storing your blogs, or host the admin yourself. If choosing our CMS, first create an account here, and start writing your first blog.</p>
+                <p>Then, choose the command for your choice of environment from above. Once the dependencies are installed, import ScrollInk, the installed scroll and initialise it with the config object.</p>
+                <p>For any environment, first initialise ScrollInk, then call the load() function, and finally call the subscribe(callback) function, where callback is the function that receives updates to your DOM.</p>
+                <p>Read more about getting started.</p>
+            </div>
+            <div class="section">
+                <h2>Contribute</h2>
+                <p>Are you a developer? We would love you addition to Shaai. These are the currently open issues accross various repositories.</p>
+                <h3>#5 - Typo in About section</h3>
+                <p>There’s a typo in ‘yourself’ in about section.</p>
+                <h3>#5 - Typo in About section</h3>
+                <p>There’s a typo in ‘yourself’ in about section.</p>
+            </div>
+        </div>
     </div>
 </body>
+
 </html>

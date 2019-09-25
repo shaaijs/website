@@ -8,7 +8,8 @@
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@shaaijs" />
     <meta property="og:title" content="Shaai - A pluggable blogging framework" />
-    <meta property="og:description" content="Create amazing new blogs or integrate them into your existing websites using Shaai. It is open source and completely pluggable." />
+    <meta property="og:description"
+        content="Create amazing new blogs or integrate them into your existing websites using Shaai. It is open source and completely pluggable." />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="https://shaaijs.tech" />
     <meta property="og:image:width" content="900" />
@@ -32,11 +33,11 @@
 <body>
     <div class="navbar">
         <h1 style="margin: 0px;">Shaai</h1>
-        <div>
-            <span><a>Get Started</a></span>
-            <span><a>Blog</a></span>
-            <span><a>Documentation</a></span>
-            <span><a>Github</a></span>
+        <div class="navigation">
+            <span><a href="https://shaai.herokuapp.com">Get Started</a></span>
+            <span><a href="https://shaaijs.tech/blog">Blog</a></span>
+            <span><a href="https://github.com/shaaijs/core">Documentation</a></span>
+            <span><a href="https://github.com/shaaijs">Github</a></span>
         </div>
     </div>
     <div class="content-wrapper">
@@ -44,25 +45,29 @@
             <div class="section section-header">
                 <h1>Create amazing blogs with minimal setup</h1>
                 <div>
-                    <button>Get Started</button>
-                    <button>GitHub</button>
+                    <a href="https://shaai.herokuapp.com"><button>Get Started</button></a>
+                    <a href="https://github.com/shaaijs"><button>GitHub</button></a>
                 </div>
             </div>
-            <div class="section">
+            <div id="know-shaai-better" class="section">
                 <h2>Knowing Shaai better</h2>
                 <p>We often introduce Shaai as a pluggable blogging framework. But what does that exactly mean?</p>
-                <p>Shaai is built in such way that you could use individual entities of the framework independently, and customise them as per your needs.</p>
+                <p>Shaai is built in such way that you could use individual entities of the framework independently, and
+                    customise them as per your needs.</p>
 
                 <!-- <div></div> -->
-                <img style="align-self:center" src="assets/images/shaai-better.png" />
+                <img style="width: inherit; align-self: center; margin: 20px 0;" src="assets/images/shaai-better.png" />
                 <p>Shaai is made up of three major constituents.</p>
 
                 <h3>Core library</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae ornare tempor facilisis sed ut lacus. Suspendisse placerat nulla ipsum nunc consequat blandit.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae ornare tempor facilisis sed ut lacus.
+                    Suspendisse placerat nulla ipsum nunc consequat blandit.</p>
                 <h3>Scrolls</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae ornare tempor facilisis sed ut lacus. Suspendisse placerat nulla ipsum nunc consequat blandit.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae ornare tempor facilisis sed ut lacus.
+                    Suspendisse placerat nulla ipsum nunc consequat blandit.</p>
                 <h3>Admin</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae ornare tempor facilisis sed ut lacus. Suspendisse placerat nulla ipsum nunc consequat blandit.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae ornare tempor facilisis sed ut lacus.
+                    Suspendisse placerat nulla ipsum nunc consequat blandit.</p>
             </div>
         </div>
         <div class="content">
@@ -70,22 +75,28 @@
                 <h2>Vanilla</h2>
                 <p>npm install --save @shaai/scroll-ink</p>
                 <h2>React</h2>
-                <p>npm install --save @shaai/scroll-ink</p>
+                <p>npm install --save @shaai/scroll-ink @shaai/react</p>
                 <h2>Browser</h2>
-                <p>npm install --save @shaai/scroll-ink</p>
+                <p>
+                    https://unpkg.com/@shaai/scroll-ink/dist/main.js
+                </p>
                 <h2>Vue & Angular</h2>
-                <p>npm install --save @shaai/scroll-ink</p>
+                <p>Coming soon.</p>
             </div>
-            <div class="section">
+            <div id="get-started" class="section">
                 <h2>Get Started</h2>
-                <p>Begin with choosing your CMS. You can use our CMS for storing your blogs, or host the admin yourself. If choosing our CMS, first create an account here, and start writing your first blog.</p>
-                <p>Then, choose the command for your choice of environment from above. Once the dependencies are installed, import ScrollInk, the installed scroll and initialise it with the config object.</p>
-                <p>For any environment, first initialise ScrollInk, then call the load() function, and finally call the subscribe(callback) function, where callback is the function that receives updates to your DOM.</p>
+                <p>Begin with choosing your CMS. You can use our CMS for storing your blogs, or host the admin yourself.
+                    If choosing our CMS, first create an account here, and start writing your first blog.</p>
+                <p>Then, choose the command for your choice of environment from above. Once the dependencies are
+                    installed, import ScrollInk, the installed scroll and initialise it with the config object.</p>
+                <p>For any environment, first initialise ScrollInk, then call the load() function, and finally call the
+                    subscribe(callback) function, where callback is the function that receives updates to your DOM.</p>
                 <p>Read more about getting started.</p>
             </div>
-            <div class="section">
+            <div id="contribute" class="section">
                 <h2>Contribute</h2>
-                <p>Are you a developer? We would love you addition to Shaai. These are the currently open issues accross various repositories.</p>
+                <p>Are you a developer? We would love you addition to Shaai. These are the currently open issues accross
+                    various repositories.</p>
                 <h3>#5 - Typo in About section</h3>
                 <p>There’s a typo in ‘yourself’ in about section.</p>
                 <h3>#5 - Typo in About section</h3>

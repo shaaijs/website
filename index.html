@@ -8,12 +8,13 @@
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@shaaijs" />
     <meta property="og:title" content="Shaai - A pluggable blogging framework" />
-    <meta property="og:description" content="Create amazing new blogs or integrate them into your existing websites using Shaai. It is open source and completely pluggable." />
+    <meta property="og:description"
+        content="Create amazing new blogs or integrate them into your existing websites using Shaai. It is open source and completely pluggable." />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="https://shaaijs.tech" />
     <meta property="og:image:width" content="900" />
     <meta property="og:image:height" content="450" />
-    <meta property="og:image" content="https://i.imgur.com/NHIuyZN.png" />
+    <meta property="og:image" content="https://i.imgur.com/84eLRd5.jpg" />
     <title>Shaai - A pluggable blogging framework</title>
     <link rel="shortcut icon" type="image/jpg" href="https://i.imgur.com/84eLRd5s.jpg" />
     <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
@@ -59,14 +60,18 @@
                 <p>Shaai is made up of three major constituents.</p>
 
                 <h3>Core library</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae ornare tempor facilisis sed ut lacus.
-                    Suspendisse placerat nulla ipsum nunc consequat blandit.</p>
+                <p>This is the core package containing the basic data related functions and does the job of talking to
+                    the data source. This npm package can be independently used to consume blog data and render as per
+                    one's needs. Generally, the core library is used by scrolls internally.</p>
                 <h3>Scrolls</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae ornare tempor facilisis sed ut lacus.
-                    Suspendisse placerat nulla ipsum nunc consequat blandit.</p>
+                <p>In Shaai, scrolls are templates that render your data. @shaai/scroll-ink is one of our homemade
+                    scrolls. It provides a blog design using Shaai's design system and is a clean way to show your blog
+                    posts.</p>
                 <h3>Admin</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae ornare tempor facilisis sed ut lacus.
-                    Suspendisse placerat nulla ipsum nunc consequat blandit.</p>
+                <p>This is the content management system for Shaai. You can manage your blogs <a
+                        href="https://shaai.herokuapp.com">here</a>. The CMS can
+                    be <a href="https://github.com/shaaijs/admin#host-shaai-admin-on-heroku">self
+                        hosted</a> on your server, or you can use our hosted version directly.</p>
             </div>
         </div>
         <div class="content">
@@ -85,12 +90,13 @@
             <div id="get-started" class="section">
                 <h2>Get Started</h2>
                 <p>Begin with choosing your CMS. You can use our CMS for storing your blogs, or host the admin yourself.
-                    If choosing our CMS, first create an account here, and start writing your first blog.</p>
+                    If choosing our CMS, first create an account <a href="https://shaai.herokuapp.com">here</a>, and
+                    start writing your first blog.</p>
                 <p>Then, choose the command for your choice of environment from above. Once the dependencies are
                     installed, import ScrollInk, the installed scroll and initialise it with the config object.</p>
                 <p>For any environment, first initialise ScrollInk, then call the load() function, and finally call the
                     subscribe(callback) function, where callback is the function that receives updates to your DOM.</p>
-                <p>Read more about getting started.</p>
+                <p><a href="https://github.com/shaaijs/scroll-ink#usage">Read more about getting started.</a></p>
             </div>
             <div id="contribute" class="section">
                 <h2>Contribute</h2>

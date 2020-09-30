@@ -2,3 +2,4 @@
 # Shaai - Website
 
 Visit Shaai's homepage [here](https://shaaijs.tech).
+Should have more specific credit and other stuffs.
